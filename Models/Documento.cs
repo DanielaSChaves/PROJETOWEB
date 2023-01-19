@@ -29,7 +29,7 @@ namespace PROJETOWEB.Models
             if (Categoria == "")
                 mensagens += "A Categoria é obrigatória. ";
 
-            if (Arquivo.ToLower().Contains(".pdf") || Arquivo.ToLower().Contains(".doc") || Arquivo.ToLower().Contains(".xls") || Arquivo.ToLower().Contains(".docx") || Arquivo.ToLower().Contains(".xlsx")) ;
+            if (!(Arquivo.ToLower().Contains(".pdf") || Arquivo.ToLower().Contains(".doc") || Arquivo.ToLower().Contains(".xls") || Arquivo.ToLower().Contains(".docx") || Arquivo.ToLower().Contains(".xlsx"))) ;
             mensagens += "O Arquivo é inválido. ";
 
             if (string.IsNullOrEmpty(mensagens))
